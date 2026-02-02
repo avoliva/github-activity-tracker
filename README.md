@@ -16,7 +16,8 @@ The API includes in-memory caching for improved performance and comprehensive er
 
 ### Prerequisites
 
-- Python 3.9 or higher
+- Python 3.9 or higher (for direct Python)
+- Docker (for Docker deployment)
 - pip
 
 ### Setup
@@ -41,8 +42,15 @@ The API includes in-memory caching for improved performance and comprehensive er
    Edit `.env` if you need to customize settings. Default values work for basic usage.
 
 4. **Run the application:**
+   
+   **Option A: Direct Python**
    ```bash
    uvicorn app.main:app --reload
+   ```
+   
+   **Option B: Docker**
+   ```bash
+   docker compose up
    ```
    
    The API will be available at `http://localhost:8000`

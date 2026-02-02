@@ -2,18 +2,22 @@
 
 2. Do we want to include all events (e.g. WatchEvent, ForkEvent)? Currently we check every GitHubEvent, though we can easily create a list of accepted events.
 
-3. How should we handle users with no activity? Currently returning empty repositories array with total_events: 0.
+3. How should we handle authentication? Who will be using this API?
 
-4. Currently we are using an in-memory cache. For production, should we use Redis or another distributed cache? We may need a way to invalidate too.
+4. How should we handle users with no activity? Currently returning empty repositories array with total_events: 0.
 
-5. Should we implement client-side rate limiting to prevent hitting GitHub's API limits?
+5. Currently we are using an in-memory cache. For production, should we use Redis or another distributed cache? We may need a way to invalidate too.
 
-7. Currently using a 30 second timeout for the GitHub API requests. Should we use a different timeout value?
+6. Should we implement client-side rate limiting to prevent hitting GitHub's API limits?
 
-6. Should we support pagination for users with many repositories? Maybe we can add a paraameter that tells the API how many repositories to return, too.
+7. Should we support pagination for users with many repositories? Maybe we can add a paraameter that tells the API how many repositories to return, too.
 
-7. Should we add any filters to the API? 
+8. Currently using a 30 second timeout for the GitHub API requests. Should we use a different timeout value?
 
-8. Should we support GitHub API tokens for higher rate limits?
+9. Should we add any filters to the API? 
 
-9. Should we add any metrics to the API? (response times, cache hit rates, error rates, etc.)
+10. Should we support GitHub API tokens for higher rate limits?
+
+11. Should we add any metrics to the API? (response times, cache hit rates, error rates, etc.)
+
+12. Are we going to be using kubrnetes?
