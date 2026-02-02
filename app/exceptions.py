@@ -1,3 +1,5 @@
+"""Custom exceptions for GitHub API errors."""
+
 from typing import Optional
 
 

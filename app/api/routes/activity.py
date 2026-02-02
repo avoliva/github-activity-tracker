@@ -1,3 +1,5 @@
+"""API routes for GitHub user activity endpoints."""
+
 import logging
 
 from fastapi import APIRouter, Depends, HTTPException

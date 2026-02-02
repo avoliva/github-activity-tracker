@@ -1,3 +1,5 @@
+"""API response schemas for activity endpoints."""
+
 from typing import List
 
 from pydantic import BaseModel, Field

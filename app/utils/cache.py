@@ -1,3 +1,5 @@
+"""Time-to-live cache implementation with size limits."""
+
 import time
 from typing import Dict, Generic, Optional, Tuple, TypeVar
 

@@ -1,3 +1,5 @@
+"""Business logic for analyzing GitHub user activity."""
+
 from collections import Counter, defaultdict
 from typing import Dict, List
 

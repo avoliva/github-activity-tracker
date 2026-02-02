@@ -1,3 +1,5 @@
+"""FastAPI dependency injection functions."""
+
 from typing import List, Optional
 
 from fastapi import Depends, Request

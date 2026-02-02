@@ -1,3 +1,5 @@
+"""FastAPI application entry point and lifecycle management."""
+
 from contextlib import asynccontextmanager
 from typing import AsyncGenerator
 

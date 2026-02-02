@@ -2,5 +2,8 @@ line-length = 100
 target-version = "py39"
 
 [lint]
-select = ["E", "F", "I", "N", "W"]
-ignore = []
+select = ["E", "F", "I", "N", "W", "D"]
+ignore = ["D203", "D212", "D213"]  # D203/D212: conflicts, D213: prefer summary on first line
+
+[lint.per-file-ignores]
+"**/__init__.py" = ["D104"]  # Allow empty __init__.py files without docstrings

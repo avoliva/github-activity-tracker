@@ -1,3 +1,5 @@
+"""Repository layer for GitHub API data access."""
+
 from typing import List
 
 import httpx

@@ -1,3 +1,5 @@
+"""Pydantic models for GitHub API data structures."""
+
 from datetime import datetime
 
 from pydantic import BaseModel, Field, field_validator

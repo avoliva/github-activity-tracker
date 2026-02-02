@@ -1,3 +1,5 @@
+"""Application configuration and settings management."""
+
 from logging.config import dictConfig
 from typing import Optional
 from urllib.parse import urlparse
