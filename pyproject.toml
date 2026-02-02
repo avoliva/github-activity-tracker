@@ -1,0 +1,21 @@
+[project]
+name = "github-activity-tracker"
+version = "1.0.0"
+description = "GitHub Activity Tracker API"
+requires-python = ">=3.9"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "W"]
+ignore = []
+
+[tool.black]
+line-length = 100
+target-version = ['py39']
